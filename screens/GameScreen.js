@@ -31,6 +31,8 @@ function GameScreen({ userNumber, onGameOver }) {
     if (currentGuess === userNumber) {
       onGameOver(guessRounds.length);
     }
+    // console.log(currentGuess);
+    // console.log(guessRounds.length);
   }, [currentGuess, userNumber, onGameOver]);
 
   useEffect(() => {

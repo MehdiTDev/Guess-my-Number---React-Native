@@ -1,4 +1,4 @@
-import { TextInput, View, StyleSheet, Alert } from "react-native";
+import { TextInput, View, StyleSheet, Alert, Text } from "react-native";
 import { useState } from "react";
 
 import PrimaryButton from "../components/ui/PrimaryButton";
@@ -31,9 +31,9 @@ function StartGameScreen({ onPickNumber }) {
   }
   return (
     <View style={styles.rootContainer}>
-      <Title>Guess my Number!</Title>
+      <Title>Guess my number!</Title>
       <Card>
-        <InstructionText>Enter number</InstructionText>
+        <InstructionText>Enter a number</InstructionText>
         <TextInput
           style={styles.numberInput}
           maxLength={2}
